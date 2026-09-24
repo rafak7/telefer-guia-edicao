@@ -1,20 +1,16 @@
-# Como editar o site da Telefer
+# Manual de edição — Site Telefer
 
-Manual para o time Telefer: o site **não usa mais Elementor** nas páginas institucionais. Elas ficam no **tema Telefer**.
+O site usa o **tema Telefer** (não é mais Elementor). Este manual ensina a operar o painel sozinho.
 
-**Leia o guia completo (com imagens):**  
+**Guia completo com imagens:**  
 https://rafak7.github.io/telefer-guia-edicao/
 
-## Resumo
+## O que você faz no WordPress
 
-| O quê | Como |
-| --- | --- |
-| Artigo do Blog | WordPress → **Posts** |
-| Enviar imagem | WordPress → **Mídia** |
-| Home, Sobre, Soluções, Cloud, IA, Contato, fachada, prazos, menu | Pedido no **grupo oficial da V4** |
+1. **Blog** — Posts → Adicionar novo (título, texto, resumo, categoria, imagem destacada) → Publicar.
+2. **Fotos** — Mídia → Adicionar novo arquivo.
+3. **Política de Privacidade** — Páginas → abrir a página → editar o texto → Atualizar.
+4. **Leads** — menu Leads.
+5. **Textos/fotos da Home, Sobre, Cloud, etc.** — arquivo do tema (Editor de arquivos ou gerenciador da hospedagem). Caminhos e exemplos no guia.
 
 Painel: https://telefer.com.br/wp-admin/
-
-Depois de publicar um artigo, avisem a V4 para confirmar se ele já aparece na grade de https://telefer.com.br/blog/
-
-Não editem layout no Elementor, não apaguem páginas institucionais e não mexam em plugins sem alinhamento.
