@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="t d">
+  <title id="t">Menu lateral do WordPress</title>
+  <desc id="d">Ilustração do menu do painel com os itens que a Telefer usa no dia a dia.</desc>
+  <rect width="960" height="560" fill="#f0f0f1"/>
+  <rect width="960" height="46" fill="#1d2327"/>
+  <text x="20" y="29" fill="#ffffff" font-family="system-ui,Segoe UI,sans-serif" font-size="15" font-weight="700">Painel WordPress  Telefer</text>
+  <rect y="46" width="220" height="514" fill="#1d2327"/>
+  <g font-family="system-ui,Segoe UI,sans-serif" font-size="14" fill="#c3c4c7">
+    <text x="24" y="80">Painel</text>
+    <rect x="8" y="96" width="204" height="36" rx="4" fill="#2271b1"/>
+    <text x="24" y="119" fill="#ffffff" font-weight="700">1  Posts</text>
+    <text x="40" y="154" fill="#ffffff"> Todos os posts</text>
+    <text x="40" y="178" fill="#ffffff"> Adicionar novo</text>
+    <text x="40" y="202" fill="#ffffff"> Categorias</text>
+    <text x="24" y="242">2  Mídia</text>
+    <text x="24" y="278" fill="#8c8f94">Páginas (não editar layout)</text>
+    <text x="24" y="314">3  Leads</text>
+    <text x="24" y="350" fill="#8c8f94">Aparência</text>
+    <text x="24" y="386" fill="#8c8f94">Plugins</text>
+    <text x="24" y="422" fill="#8c8f94">Elementor</text>
+  </g>
+  <rect x="248" y="70" width="688" height="460" rx="8" fill="#ffffff" stroke="#dcdcde"/>
+  <text x="272" y="110" font-family="system-ui,Segoe UI,sans-serif" font-size="22" font-weight="700" fill="#1d2327">Posts</text>
+  <text x="272" y="138" font-family="system-ui,Segoe UI,sans-serif" font-size="14" fill="#50575e">Aqui ficam os artigos do Blog. Clique em Adicionar novo para criar um post.</text>
+  <rect x="272" y="164" width="160" height="36" rx="4" fill="#2271b1"/>
+  <text x="292" y="187" font-family="system-ui,Segoe UI,sans-serif" font-size="14" fill="#ffffff" font-weight="600">Adicionar novo</text>
+  <rect x="272" y="220" width="640" height="44" rx="4" fill="#f6f7f7"/>
+  <text x="288" y="247" font-family="system-ui,Segoe UI,sans-serif" font-size="14" fill="#1d2327">Título do artigo · Categoria · Data · Publicado</text>
+  <rect x="272" y="276" width="640" height="44" rx="4" fill="#ffffff" stroke="#dcdcde"/>
+  <text x="288" y="303" font-family="system-ui,Segoe UI,sans-serif" font-size="14" fill="#1d2327">Exemplo: 5 sinais de que sua empresa precisa mudar de sistema&</text>
+</svg>

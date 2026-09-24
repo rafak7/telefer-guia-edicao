@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como editar o site Telefer</title>
+  <style>
+    :root {
+      --navy: #15325f;
+      --blue: #004ca0;
+      --gold: #fdb813;
+      --text: #1a2433;
+      --muted: #5b6775;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --ok: #0f7b3a;
+      --warn: #9a6700;
+      --no: #b42318;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    header {
+      background: linear-gradient(160deg, #0a1f44, var(--blue));
+      color: #fff;
+      padding: 48px 24px 40px;
+    }
+    header .wrap, main, footer { max-width: 880px; margin: 0 auto; }
+    header p { color: rgba(255,255,255,.82); margin: 8px 0 0; }
+    h1 { margin: 0; font-size: clamp(28px, 4vw, 40px); }
+    main { padding: 32px 24px 80px; }
+    h2 { color: var(--navy); margin-top: 48px; }
+    h3 { margin-top: 28px; }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 20px 22px;
+      box-shadow: 0 8px 24px rgba(21,50,95,.06);
+      margin: 16px 0;
+    }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #e8ebf0; vertical-align: top; }
+    th { background: var(--navy); color: #fff; }
+    .ok { color: var(--ok); font-weight: 700; }
+    .no { color: var(--no); font-weight: 700; }
+    .warn { color: var(--warn); font-weight: 700; }
+    ol.steps { padding-left: 22px; }
+    ol.steps li { margin: 10px 0; }
+    figure { margin: 20px 0; }
+    figure img { width: 100%; border-radius: 12px; border: 1px solid #e4e7ee; background: #fff; }
+    figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; }
+    .callout {
+      border-left: 4px solid var(--gold);
+      background: #fff8e1;
+      padding: 14px 16px;
+      border-radius: 0 12px 12px 0;
+    }
+    .callout.danger {
+      border-left-color: var(--no);
+      background: #fff1f0;
+    }
+    code, .path { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .92em; }
+    nav.toc a { color: var(--blue); }
+    footer { color: var(--muted); font-size: 13px; padding: 0 24px 48px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p>Manual interno · Tema Telefer</p>
+      <h1>Como editar o site da Telefer</h1>
+      <p>O que vocês fazem no WordPress e o que pedir para a V4. Sem Elementor.</p>
+    </div>
+  </header>
+
+  <main>
+    <nav class="toc card">
+      <strong>Neste guia</strong>
+      <ol>
+        <li><a href="#mudou">O que mudou (Elementor → tema)</a></li>
+        <li><a href="#quem">Quem edita o quê</a></li>
+        <li><a href="#entrar">Como entrar no painel</a></li>
+        <li><a href="#blog">Passo a passo: artigo do Blog</a></li>
+        <li><a href="#midia">Passo a passo: enviar imagem</a></li>
+        <li><a href="#v4">Passo a passo: pedir alteração de página</a></li>
+        <li><a href="#nao">O que não mexer</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="mudou">1. O que mudou</h2>
+    <p>Antes, as páginas institucionais eram montadas no <strong>Elementor</strong> (arrastar blocos no painel).</p>
+    <p>Agora o site usa o <strong>tema Telefer</strong>: Home, Sobre nós, Soluções, Telefer Cloud, Telefer com IA, Presença digital e Contato são desenhadas no código do tema. O editor visual do Elementor <strong>não altera</strong> esses layouts.</p>
+    <p>O WordPress continua sendo o painel. O uso no dia a dia é:</p>
+    <ul>
+      <li>publicar e editar <strong>artigos do Blog</strong>;</li>
+      <li>enviar arquivos na <strong>Biblioteca de Mídia</strong>;</li>
+      <li>consultar <strong>Leads</strong> recebidos pelos formulários;</li>
+      <li>pedir à V4 qualquer mudança de texto, imagem ou prazo nas páginas institucionais.</li>
+    </ul>
+
+    <h2 id="quem">2. Quem edita o quê</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Onde aparece</th>
+          <th>Como alterar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Artigo do blog (título, texto, foto, categoria)</td>
+          <td><a href="https://telefer.com.br/blog/">/blog/</a></td>
+          <td class="ok">Vocês no WordPress → Posts</td>
+        </tr>
+        <tr>
+          <td>Imagem para usar no blog ou enviar à V4</td>
+          <td>Biblioteca de Mídia</td>
+          <td class="ok">Vocês no WordPress → Mídia</td>
+        </tr>
+        <tr>
+          <td>Home, Sobre, Soluções e landings</td>
+          <td>Menu do site</td>
+          <td class="warn">Pedido no grupo oficial da V4</td>
+        </tr>
+        <tr>
+          <td>Fachada, prazos (“até 20 dias”), telefone, menu</td>
+          <td>Tema</td>
+          <td class="warn">Pedido no grupo oficial da V4</td>
+        </tr>
+        <tr>
+          <td>Textos legais (política, mapa do site)</td>
+          <td>Rodapé</td>
+          <td class="warn">Pedido no grupo oficial da V4</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="callout">A listagem principal do Blog ainda pode mostrar cards de exemplo do tema. Depois de publicar um artigo, avisem no grupo da V4 para confirmarmos se ele já aparece na grade de <span class="path">/blog/</span>.</p>
+
+    <h2 id="entrar">3. Como entrar no painel</h2>
+    <ol class="steps">
+      <li>Abra <a href="https://telefer.com.br/wp-admin/">https://telefer.com.br/wp-admin/</a>.</li>
+      <li>Informe usuário (ou e-mail) e senha.</li>
+      <li>Clique em <strong>Log In</strong>.</li>
+    </ol>
+    <figure>
+      <img src="imagens/01-login-wordpress.png" alt="Tela de login do WordPress da Telefer">
+      <figcaption>Tela real de acesso: telefer.com.br/wp-admin</figcaption>
+    </figure>
+    <p>Se não tiver login, peça acesso ao administrador do site (não compartilhem senha neste documento nem no grupo aberto).</p>
+
+    <h2 id="blog">4. Passo a passo: criar ou editar um artigo do Blog</h2>
+    <p>O Blog no site usa título, resumo, categoria, data e imagem destacada:</p>
+    <figure>
+      <img src="imagens/02-blog-site.png" alt="Página pública do Blog Telefer">
+      <figcaption>Página pública do Blog — telefer.com.br/blog/</figcaption>
+    </figure>
+
+    <h3>4.1 Abrir a lista de posts</h3>
+    <ol class="steps">
+      <li>No menu esquerdo, clique em <strong>Posts</strong>.</li>
+      <li>Para artigo novo: <strong>Adicionar novo</strong>.</li>
+      <li>Para alterar um existente: clique no título na lista.</li>
+    </ol>
+    <figure>
+      <img src="imagens/03-menu-wordpress.svg" alt="Ilustração do menu Posts no WordPress">
+      <figcaption>Ilustração do menu do painel (o visual do WordPress pode variar um pouco conforme o idioma e a versão).</figcaption>
+    </figure>
+
+    <h3>4.2 Preencher o artigo</h3>
+    <figure>
+      <img src="imagens/04-editor-artigo.svg" alt="Ilustração do editor de artigo com campos numerados">
+      <figcaption>Campos do editor. Use as categorias do filtro do site: Telefonia, Automação, Marketing Digital, Dicas e Finanças.</figcaption>
+    </figure>
+    <ol class="steps">
+      <li><strong>Título</strong> — o mesmo que aparece no card e no topo do artigo.</li>
+      <li><strong>Conteúdo</strong> — texto completo. Evite colar do Word com formatação estranha; prefira texto limpo.</li>
+      <li><strong>Resumo (Excerpt)</strong> — 2 ou 3 linhas para o card. Se não preencher, o WordPress corta o início do texto.</li>
+      <li><strong>Categoria</strong> — marque só uma, entre: Telefonia, Automação, Marketing Digital, Dicas, Finanças.</li>
+      <li><strong>Imagem destacada</strong> — foto do card. JPG ou PNG, no mínimo 1200 × 800 pixels.</li>
+      <li>Clique em <strong>Publicar</strong> (ou <strong>Atualizar</strong>, se já existir). Se quiser revisar antes, use <strong>Salvar rascunho</strong> e <strong>Visualizar</strong>.</li>
+    </ol>
+    <p class="callout">Depois de publicar, enviem no grupo da V4 o título e o link do artigo para validarmos a listagem.</p>
+
+    <h3>4.3 Editar um artigo já no ar</h3>
+    <ol class="steps">
+      <li>Posts → Todos os posts.</li>
+      <li>Abra o artigo.</li>
+      <li>Altere o que for preciso.</li>
+      <li>Clique em <strong>Atualizar</strong>.</li>
+    </ol>
+
+    <h2 id="midia">5. Passo a passo: enviar uma imagem</h2>
+    <ol class="steps">
+      <li>Menu <strong>Mídia → Adicionar novo arquivo</strong>.</li>
+      <li>Arraste o arquivo ou clique em <strong>Selecionar arquivos</strong>.</li>
+      <li>Espere o upload terminar.</li>
+      <li>Clique no arquivo e copie o <strong>URL do arquivo</strong> se forem mandar a imagem para a V4 aplicar numa página institucional.</li>
+    </ol>
+    <p>Para foto de artigo, o caminho mais simples é definir a <strong>imagem destacada</strong> direto no editor do post (passo 4.2).</p>
+
+    <h2 id="v4">6. Passo a passo: pedir alteração de página institucional</h2>
+    <p>Use este modelo no <strong>grupo oficial da V4</strong>:</p>
+    <div class="card">
+      <p><strong>Página:</strong> (ex.: Sobre nós / Telefer Cloud / Home)</p>
+      <p><strong>Onde:</strong> (ex.: seção Nossa Estrutura / Como funciona)</p>
+      <p><strong>O que mudar:</strong> (texto atual → texto novo, ou “trocar a foto da fachada”)</p>
+      <p><strong>Arquivo:</strong> (anexo ou link da Mídia)</p>
+      <p><strong>Prazo desejado:</strong> (se houver)</p>
+    </div>
+    <p>Exemplos reais deste modelo de trabalho:</p>
+    <ul>
+      <li>Sobre nós → Nossa Estrutura → nova foto da fachada do prédio.</li>
+      <li>Telefer Cloud → Como funciona → “Ativação em 48 horas” para “Ativação em até 20 dias após contratação”.</li>
+    </ul>
+
+    <h2 id="nao">7. O que não mexer</h2>
+    <div class="callout danger">
+      <p>Não usem o Elementor para “remontar” Home, Sobre ou Soluções — o tema ignora esse conteúdo.</p>
+      <p>Não apaguem páginas do menu <strong>Páginas</strong> (Home, Sobre, Soluções, Contato etc.).</p>
+      <p>Não instalem, atualizem ou desativem plugins sem alinhamento com a V4.</p>
+      <p>Não alterem Aparência → Editor de arquivos / temas.</p>
+    </div>
+
+    <h2>Contato comercial no site</h2>
+    <p>Telefone publicado: <strong>(19) 2102-5600</strong>. Qualquer mudança de telefone, WhatsApp ou e-mail institucional também vai pelo grupo da V4.</p>
+  </main>
+
+  <footer>
+    <p>Guia da V4 para o time Telefer · Tema customizado Telefer · Setembro 2026</p>
+    <p>Repositório: <a href="https://github.com/rafak7/telefer-guia-edicao">github.com/rafak7/telefer-guia-edicao</a></p>
+  </footer>
+</body>
+</html>
