@@ -6,22 +6,31 @@ Documentação do modelo **híbrido**: tema Telefer + Elementor página a págin
 
 ## Em uma frase
 
-Se a página foi publicada no Elementor, o site mostra o Elementor. Se não, continua o layout PHP atual.
+Páginas institucionais já estão no Elementor (widgets Telefer). Blog, header, menu e rodapé continuam no tema.
 
 ## O que editar onde
 
 | Conteúdo | Ferramenta |
 | --- | --- |
-| Página institucional migrada no Elementor | **Editar com Elementor** |
-| Página ainda não migrada | Continua no tema PHP (ou migre no Elementor) |
+| Home, Sobre, Soluções, Cloud, IA, Contato | **Editar com Elementor** (widgets Telefer) |
+| Página nova no Elementor | **Editar com Elementor** |
 | Artigos do Blog | WordPress → **Posts** |
 | Header / menu / rodapé | Tema (não é Theme Builder ainda) |
+
+## Widgets Telefer
+
+No painel do Elementor, busque **Telefer**:
+
+- Hero de página
+- Formulário de lead
+- Grade de soluções
+- Seção do tema
 
 ## Fluxo básico
 
 1. https://telefer.com.br/wp-admin/
 2. Páginas → abrir a página → **Editar com Elementor**
-3. Alterar / montar seções → **Publicar**
+3. Clicar no widget → alterar campos → **Atualizar**
 4. Conferir no site com hard refresh ou `?telefer_nocache=1`
 
 ## Backup pré-Elementor

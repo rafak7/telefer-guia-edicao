@@ -48,7 +48,7 @@
     <div class="wrap">
       <p>Documentação · Tema Telefer + Elementor · Outubro 2026</p>
       <h1>Como funciona agora com o Elementor</h1>
-      <p>O site continua no tema Telefer. O Elementor entra página a página, sem derrubar o layout atual.</p>
+      <p>As páginas institucionais já estão no Elementor, com widgets Telefer. Header, menu, rodapé e blog continuam no tema.</p>
     </div>
   </header>
 
@@ -61,6 +61,7 @@
         <li><a href="#entrar">Entrar no painel</a></li>
         <li><a href="#menu-elementor">Menu Elementor no WordPress</a></li>
         <li><a href="#editar">Editar uma página com Elementor</a></li>
+        <li><a href="#widgets">Widgets Telefer (o que usar)</a></li>
         <li><a href="#interface">Interface do editor Elementor</a></li>
         <li><a href="#template">Usar o template Elementor Full Width</a></li>
         <li><a href="#blog">Blog (continua no WordPress)</a></li>
@@ -72,19 +73,18 @@
     </nav>
 
     <h2 id="modelo">1. Modelo híbrido (como funciona hoje)</h2>
-    <p>O site <strong>não foi apagado e remontado do zero no Elementor</strong>. Ele usa um modelo seguro:</p>
+    <p>O site <strong>não foi remontado do zero no Elementor</strong>. Ele usa um modelo seguro:</p>
     <div class="ok">
-      <p><strong>Se a página foi salva com “Editar com Elementor”</strong> → o site mostra o conteúdo do Elementor.</p>
-      <p><strong>Se a página ainda não foi montada no Elementor</strong> → o site mantém o layout PHP do tema Telefer (o visual atual).</p>
+      <p><strong>Página publicada com Elementor</strong> → o site mostra o conteúdo do builder (widgets Telefer + Elementor).</p>
+      <p><strong>Página sem Elementor</strong> → o site mantém o layout PHP do tema Telefer.</p>
     </div>
-    <p>Assim a Home, Sobre, Soluções etc. continuam no ar enquanto cada página é migrada no builder.</p>
-    <p class="tip">O plugin <strong>Elementor</strong> está <strong>instalado e ativo</strong> em produção. As páginas institucionais (Home, Sobre, Soluções, Cloud, IA, Contato) já foram migradas para o Elementor com widgets <strong>Telefer</strong> — o conteúdo aparece no canvas para editar.</p>
+    <p class="tip">Em produção, as páginas institucionais <strong>já foram migradas</strong>: Home, Sobre nós, Soluções, Telefer Cloud, Telefer com IA e Contato. No painel esquerdo do Elementor, busque a categoria <strong>Telefer</strong>.</p>
     <div class="card">
       <p><strong>O que dá para editar no Elementor</strong></p>
       <ul>
         <li>Home, Contato, Sobre, Soluções, Telefer Cloud, Telefer com IA</li>
-        <li>No painel esquerdo, categoria <strong>Telefer</strong>: Hero de página, Formulário de lead, Grade de soluções, Seção do tema</li>
-        <li>Clique na seção → altere título, subtítulo, badge, botão no painel</li>
+        <li>Widgets Telefer: Hero de página, Formulário de lead, Grade de soluções, Seção do tema</li>
+        <li>Clique no widget no canvas → altere título, subtítulo, badge, botão, formulário no painel esquerdo</li>
       </ul>
       <p><strong>O que continua fora do Elementor (versão Free)</strong></p>
       <ul>
@@ -105,13 +105,13 @@
       <tbody>
         <tr>
           <td>Home, Sobre, Soluções, Telefer Cloud, Telefer com IA, Contato</td>
-          <td>Ainda no <strong>tema PHP</strong>, até alguém abrir e publicar no Elementor</td>
-          <td>Prontas para receber Elementor (fallback automático)</td>
+          <td><strong>Editar com Elementor</strong> (widgets Telefer)</td>
+          <td>Já migradas — conteúdo aparece no canvas</td>
         </tr>
         <tr>
-          <td>Página criada/remontada no Elementor</td>
+          <td>Página nova montada no Elementor</td>
           <td><strong>Editar com Elementor</strong></td>
-          <td>Textos, imagens e seções ficam no builder</td>
+          <td>Use widgets Telefer ou widgets básicos do Elementor</td>
         </tr>
         <tr>
           <td>Blog (artigos)</td>
@@ -162,7 +162,7 @@
     </ul>
 
     <h2 id="editar">5. Editar uma página com Elementor</h2>
-    <p>Use este fluxo quando for <strong>migrar</strong> ou <strong>alterar</strong> uma página institucional no Elementor.</p>
+    <p>Use este fluxo para <strong>alterar textos, imagens e seções</strong> das páginas já migradas.</p>
 
     <h3>5.1 Abrir a lista de páginas</h3>
     <ol class="steps">
@@ -184,51 +184,68 @@
       <figcaption>5 — Página Contato aberta no WordPress: botão <strong>Edit with Elementor</strong> no topo</figcaption>
     </figure>
 
-    <h3>5.3 Montar ou alterar seções</h3>
+    <h3>5.3 Alterar o conteúdo</h3>
     <ol class="steps">
-      <li>No painel esquerdo do Elementor, arraste widgets: <strong>Heading</strong>, <strong>Text Editor</strong>, <strong>Image</strong>, <strong>Button</strong>, etc.</li>
-      <li>Clique em qualquer texto/imagem já existente para editar.</li>
-      <li>Use Container / seções para organizar o layout (hero, cards, CTA).</li>
+      <li>No canvas (centro), clique na seção que quer mudar (ex.: hero ou formulário).</li>
+      <li>No painel esquerdo, edite os campos (Badge, Título, Subtítulo, etc.).</li>
+      <li>Para incluir uma seção nova: abra o painel de widgets, busque <strong>Telefer</strong> e arraste o widget desejado.</li>
       <li>Cores da marca: azul <span class="path">#15325f</span> / <span class="path">#004ca0</span> e amarelo <span class="path">#fdb813</span>.</li>
     </ol>
 
     <h3>5.4 Publicar e conferir</h3>
     <ol class="steps">
-      <li>Clique em <strong>Publish</strong> / <strong>Publicar</strong> (ou <strong>Atualizar</strong>).</li>
+      <li>Clique em <strong>Publish</strong> / <strong>Atualizar</strong>.</li>
       <li>Abra a URL pública da página.</li>
       <li>Faça hard refresh: Windows <kbd>Ctrl</kbd>+<kbd>F5</kbd> · Mac <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>.</li>
       <li>Se o cache mostrar versão antiga, acrescente <span class="path">?telefer_nocache=1</span> na URL.</li>
     </ol>
-    <div class="warn">
-      <p><strong>Importante:</strong> na primeira vez que você publicar uma página no Elementor, o layout PHP daquela página deixa de aparecer e passa a valer o que estiver no builder. Monte as seções principais antes de publicar, ou use <strong>Preview</strong> enquanto constrói.</p>
-    </div>
 
-    <h2 id="interface">6. Interface do editor Elementor</h2>
-    <p>Prints reais do editor na página <strong>Contato</strong> da Telefer:</p>
+    <h2 id="widgets">6. Widgets Telefer (o que usar)</h2>
+    <p>No painel de elementos, digite <strong>Telefer</strong> na busca. Aparecem quatro widgets customizados do tema:</p>
     <figure>
-      <img src="imagens/11-elementor-editor-contato.png" alt="Editor Elementor abrindo a página Contato">
-      <figcaption>6 — Editor Elementor aberto na página Contato (canvas + painel)</figcaption>
+      <img src="imagens/20-elementor-widgets-telefer.png" alt="Widgets Telefer no painel do Elementor com canvas Contato">
+      <figcaption>6 — Busca “Telefer”: Hero de página, Formulário de lead, Grade de soluções, Seção do tema — canvas com a página Contato carregada</figcaption>
+    </figure>
+    <div class="card">
+      <ul>
+        <li><strong>Telefer — Hero de página</strong> — badge, título, subtítulo e canais WhatsApp/e-mail</li>
+        <li><strong>Telefer — Formulário de lead</strong> — formulário “Fale conosco” (nome, empresa, e-mail, WhatsApp, mensagem)</li>
+        <li><strong>Telefer — Grade de soluções</strong> — cards do hub Soluções</li>
+        <li><strong>Telefer — Seção do tema</strong> — reaproveita blocos PHP do tema quando necessário</li>
+      </ul>
+    </div>
+    <figure>
+      <img src="imagens/22-elementor-edit-hero-contato.png" alt="Editando o widget Hero de página na Contato">
+      <figcaption>7 — Clique no hero → painel <strong>Edit Telefer — Hero de página</strong> (Badge, Título, Subtítulo, WhatsApp)</figcaption>
+    </figure>
+    <p class="tip">Prefira os widgets Telefer em vez de remontar a página só com Heading/Image genéricos — eles mantêm o visual e o comportamento do site.</p>
+
+    <h2 id="interface">7. Interface do editor Elementor</h2>
+    <p>Prints reais do editor na página <strong>Contato</strong> (já migrada, com conteúdo no canvas):</p>
+    <figure>
+      <img src="imagens/11-elementor-editor-contato.png" alt="Editor Elementor na página Contato com conteúdo">
+      <figcaption>8 — Editor Elementor na Contato: widgets Telefer à esquerda + página real no centro</figcaption>
     </figure>
     <figure>
-      <img src="imagens/12-elementor-editor-full.png" alt="Editor Elementor completo da página Contato">
-      <figcaption>7 — Visão completa: barra superior (Contato, Desktop/Tablet/Mobile, Publish) + widgets à esquerda + área “Drag widget here”</figcaption>
+      <img src="imagens/21-elementor-structure-contato.png" alt="Estrutura do Elementor mostrando widgets Telefer">
+      <figcaption>9 — <strong>Structure</strong>: Containers com Telefer — Hero de página e Telefer — Formulário de lead</figcaption>
     </figure>
     <figure>
-      <img src="imagens/10-elementor-widgets-panel.png" alt="Painel de widgets do Elementor">
-      <figcaption>8 — Painel de widgets (Heading, Image, Button, Container…). Arraste para a área central.</figcaption>
+      <img src="imagens/12-elementor-editor-full.png" alt="Visão completa do editor Elementor Contato">
+      <figcaption>10 — Visão completa: barra superior (Contato, Desktop/Tablet/Mobile, Publish) + widgets + Structure</figcaption>
     </figure>
     <div class="card">
       <p><strong>Onde fica o quê no editor</strong></p>
       <ul>
-        <li><strong>Esquerda</strong> — widgets (elementos) para arrastar</li>
-        <li><strong>Centro</strong> — prévia da página (canvas)</li>
+        <li><strong>Esquerda</strong> — widgets ou campos do widget selecionado</li>
+        <li><strong>Centro</strong> — prévia da página (canvas) com o conteúdo real</li>
         <li><strong>Topo</strong> — nome da página, modo responsivo, Preview e Publish</li>
-        <li><strong>Structure</strong> — árvore das seções (útil em páginas grandes)</li>
+        <li><strong>Structure</strong> — árvore das seções (útil para achar Hero / Formulário)</li>
       </ul>
     </div>
-    <p class="tip">Se o editor abrir em <strong>Safe Mode</strong>, o Elementor está isolando tema/plugins para carregar. Dá para editar normalmente; depois clique em <em>Disable Safe Mode</em> se tudo estiver estável.</p>
+    <p class="tip">Se aparecer <em>Session expired</em>, faça login de novo no WordPress e recarregue o editor. Em Safe Mode, o Elementor isola tema/plugins; dá para editar e depois desativar o Safe Mode.</p>
 
-    <h2 id="template">7. Usar o template Elementor Full Width</h2>
+    <h2 id="template">8. Usar o template Elementor Full Width</h2>
     <p>O tema tem um modelo específico para páginas 100% Elementor, mantendo o header/rodapé Telefer:</p>
     <ol class="steps">
       <li>Abra a página no editor do WordPress (não no Elementor ainda).</li>
@@ -237,9 +254,9 @@
       <li>Salve / Atualize.</li>
       <li>Depois clique em <strong>Editar com Elementor</strong>.</li>
     </ol>
-    <p>As páginas institucionais atuais (Home, Sobre, Cloud…) já têm lógica híbrida nos templates próprios. O Full Width é útil para páginas novas.</p>
+    <p>As páginas institucionais já migradas usam a lógica híbrida do tema. O Full Width é útil para <strong>páginas novas</strong>.</p>
 
-    <h2 id="blog">8. Blog (continua no WordPress)</h2>
+    <h2 id="blog">9. Blog (continua no WordPress)</h2>
     <p>Artigos do Blog <strong>não dependem do Elementor</strong>:</p>
     <ol class="steps">
       <li><strong>Posts → Adicionar novo</strong> (ou abra um post existente).</li>
@@ -249,26 +266,26 @@
     </ol>
     <figure>
       <img src="imagens/02-blog-site.png" alt="Página pública do Blog Telefer">
-      <figcaption>9 — Listagem pública: telefer.com.br/blog/</figcaption>
+      <figcaption>11 — Listagem pública: telefer.com.br/blog/</figcaption>
     </figure>
     <figure>
       <img src="imagens/05-lista-posts.png" alt="Lista de posts no WordPress">
-      <figcaption>10 — Posts → Todos os posts (lista no painel)</figcaption>
+      <figcaption>12 — Posts → Todos os posts (lista no painel)</figcaption>
     </figure>
     <figure>
       <img src="imagens/06-editor-artigo.png" alt="Editor de artigo no WordPress">
-      <figcaption>11 — Editor de artigo (título, bloco de texto, publicar)</figcaption>
+      <figcaption>13 — Editor de artigo (título, bloco de texto, publicar)</figcaption>
     </figure>
     <figure>
       <img src="imagens/08-categorias.png" alt="Categorias do blog no WordPress">
-      <figcaption>12 — Posts → Categorias</figcaption>
+      <figcaption>14 — Posts → Categorias</figcaption>
     </figure>
     <figure>
       <img src="imagens/09-midia-enviar.png" alt="Biblioteca de mídia no WordPress">
-      <figcaption>13 — Mídia → Enviar (imagem destacada / imagens do artigo)</figcaption>
+      <figcaption>15 — Mídia → Enviar (imagem destacada / imagens do artigo)</figcaption>
     </figure>
 
-    <h2 id="header">9. Header, rodapé e menu</h2>
+    <h2 id="header">10. Header, rodapé e menu</h2>
     <p>Hoje o menu (Home, Sobre, Soluções, Blog, Contratar, Contato), o logo e o rodapé vêm do <strong>tema Telefer</strong>, não do Elementor.</p>
     <ul>
       <li>Soluções ativas no menu: <strong>Telefer Cloud</strong> e <strong>Telefer com IA</strong>.</li>
@@ -276,17 +293,16 @@
     </ul>
     <p class="tip">Para editar header/rodapé visualmente no Elementor no futuro, seria necessário Elementor Pro (Theme Builder). Por enquanto, alterações de menu/header passam pelo tema.</p>
 
-    <h2 id="voltar">10. Voltar ao layout antigo de uma página</h2>
-    <p>Se uma página foi publicada no Elementor e você quiser restaurar o visual PHP do tema:</p>
+    <h2 id="voltar">11. Voltar ao layout antigo de uma página</h2>
+    <p>Se precisar restaurar o visual PHP do tema em uma página já no Elementor:</p>
     <ol class="steps">
-      <li>Abra a página no WordPress.</li>
-      <li>Em Elementor (ou nos metadados da página), limpe / desative o modo builder — ou exclua as seções e volte o conteúdo ao modo clássico, conforme a versão do Elementor.</li>
-      <li>Forma prática: no editor Elementor, use o histórico / limpe o conteúdo e <strong>não</strong> deixe a página marcada como construída no Elementor; depois atualize.</li>
-      <li>Confirme no site com <span class="path">?telefer_nocache=1</span>: se não houver builder ativo, o tema PHP volta a aparecer.</li>
+      <li>Abra a página no WordPress / Elementor.</li>
+      <li>Limpe o conteúdo do builder ou desative o modo Elementor dessa página (conforme a versão do plugin).</li>
+      <li>Confirme no site com <span class="path">?telefer_nocache=1</span>: sem builder ativo, o tema PHP volta a aparecer.</li>
     </ol>
     <p>Em caso de dúvida, peça rollback do tema (seção abaixo) — o backup pré-Elementor está guardado.</p>
 
-    <h2 id="backup">11. Backup e rollback do tema</h2>
+    <h2 id="backup">12. Backup e rollback do tema</h2>
     <p>Antes da ponte Elementor, foi feito backup completo do tema:</p>
     <ul>
       <li>Servidor: <span class="path">wp-content/themes/telefer-pre-elementor-20261014/</span></li>
@@ -299,28 +315,18 @@
       <li>Atualize o site com <span class="path">?telefer_nocache=1</span></li>
     </ol>
 
-    <h2 id="checklist">12. Checklist rápido</h2>
+    <h2 id="checklist">13. Checklist rápido</h2>
     <div class="card">
-      <p><strong>Alterar texto/imagem de página já no Elementor:</strong> Páginas → abrir → Editar com Elementor → alterar → Atualizar → hard refresh.</p>
-      <p><strong>Migrar página que ainda está em PHP:</strong> Páginas → Editar com Elementor → montar seções → Visualizar → Publicar.</p>
-      <p><strong>Artigo do Blog:</strong> Posts → Adicionar novo → categoria + imagem destacada → Publicar.</p>
+      <p><strong>Alterar texto/imagem:</strong> Páginas → abrir → Editar com Elementor → clicar no widget Telefer → alterar no painel → Atualizar → hard refresh.</p>
+      <p><strong>Incluir seção:</strong> buscar <strong>Telefer</strong> no painel de widgets → arrastar Hero / Formulário / Grade / Seção do tema.</p>
+      <p><strong>Artigo do Blog:</strong> Posts → Adicionar novo → categoria oficial + imagem destacada → Publicar.</p>
       <p><strong>Conferir cache:</strong> acrescente <span class="path">?telefer_nocache=1</span> na URL.</p>
       <p><strong>Soluções no menu:</strong> só Cloud e Telefer com IA.</p>
     </div>
-
-    <h2>Ordem sugerida para migrar páginas</h2>
-    <ol>
-      <li>Contato (mais simples)</li>
-      <li>Soluções (hub)</li>
-      <li>Telefer Cloud</li>
-      <li>Telefer com IA</li>
-      <li>Sobre nós</li>
-      <li>Home (mais complexa — deixe por último)</li>
-    </ol>
   </main>
 
   <footer>
-    <p>Documentação Telefer · Tema híbrido PHP + Elementor · Outubro 2026</p>
+    <p>Documentação Telefer · Tema híbrido PHP + Elementor · Páginas institucionais migradas · Outubro 2026</p>
     <p><a href="https://github.com/rafak7/telefer-guia-edicao">github.com/rafak7/telefer-guia-edicao</a> · <a href="https://rafak7.github.io/telefer-guia-edicao/">rafak7.github.io/telefer-guia-edicao</a></p>
   </footer>
 </body>
