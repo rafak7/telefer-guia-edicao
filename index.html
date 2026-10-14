@@ -59,7 +59,9 @@
         <li><a href="#modelo">Modelo híbrido (como funciona hoje)</a></li>
         <li><a href="#oquee">O que já é Elementor e o que ainda é PHP</a></li>
         <li><a href="#entrar">Entrar no painel</a></li>
+        <li><a href="#menu-elementor">Menu Elementor no WordPress</a></li>
         <li><a href="#editar">Editar uma página com Elementor</a></li>
+        <li><a href="#interface">Interface do editor Elementor</a></li>
         <li><a href="#template">Usar o template Elementor Full Width</a></li>
         <li><a href="#blog">Blog (continua no WordPress)</a></li>
         <li><a href="#header">Header, rodapé e menu</a></li>
@@ -76,7 +78,7 @@
       <p><strong>Se a página ainda não foi montada no Elementor</strong> → o site mantém o layout PHP do tema Telefer (o visual atual).</p>
     </div>
     <p>Assim a Home, Sobre, Soluções etc. continuam no ar enquanto cada página é migrada no builder.</p>
-    <p class="tip">O plugin <strong>Elementor</strong> já está instalado em produção. O tema Telefer (versão 1.10+) reconhece páginas feitas no Elementor.</p>
+    <p class="tip">O plugin <strong>Elementor</strong> está <strong>instalado e ativo</strong> em produção. O tema Telefer (versão 1.10+) reconhece páginas feitas no Elementor.</p>
 
     <h2 id="oquee">2. O que já é Elementor e o que ainda é PHP</h2>
     <table>
@@ -124,40 +126,96 @@
     </ol>
     <figure>
       <img src="imagens/01-login-wordpress.png" alt="Tela de login do WordPress Telefer">
-      <figcaption>Acesso: telefer.com.br/wp-admin</figcaption>
+      <figcaption>1 — Tela de login: telefer.com.br/wp-admin</figcaption>
     </figure>
-    <p>Quem ainda não tem usuário: peça ao admin do site (V4) para criar conta com perfil <strong>Editor</strong> ou <strong>Administrador</strong>.</p>
+    <figure>
+      <img src="imagens/05-wp-dashboard.png" alt="Dashboard do WordPress Telefer">
+      <figcaption>2 — Dashboard após o login (menu lateral do WordPress)</figcaption>
+    </figure>
+    <p>Quem ainda não tem usuário: peça ao admin do site para criar conta com perfil <strong>Editor</strong> ou <strong>Administrador</strong>.</p>
 
-    <h2 id="editar">4. Editar uma página com Elementor</h2>
+    <h2 id="menu-elementor">4. Menu Elementor no WordPress</h2>
+    <p>Com o Elementor ativo, aparece o item <strong>Elementor</strong> no menu esquerdo do painel.</p>
+    <figure>
+      <img src="imagens/09-elementor-home.png" alt="Tela inicial do Elementor no wp-admin da Telefer">
+      <figcaption>3 — Elementor → Editor / Quick Start (Create a Page, Edit site, Templates)</figcaption>
+    </figure>
+    <p>Nessa área você encontra:</p>
+    <ul>
+      <li><strong>Editor</strong> — início rápido e atalhos</li>
+      <li><strong>Templates</strong> — modelos salvos</li>
+      <li><strong>Settings / Tools</strong> — configurações do plugin</li>
+      <li><strong>Theme Builder</strong> — header/footer globais (recurso Pro / futuro)</li>
+    </ul>
+
+    <h2 id="editar">5. Editar uma página com Elementor</h2>
     <p>Use este fluxo quando for <strong>migrar</strong> ou <strong>alterar</strong> uma página institucional no Elementor.</p>
 
-    <h3>4.1 Abrir a página</h3>
+    <h3>5.1 Abrir a lista de páginas</h3>
     <ol class="steps">
       <li>No menu esquerdo: <strong>Páginas → Todas as páginas</strong>.</li>
-      <li>Abra a página desejada (ex.: Contato, Sobre nós, Home).</li>
-      <li>Clique em <strong>Editar com Elementor</strong>.</li>
+      <li>Localize a página (ex.: Contato, Sobre nós, Home).</li>
     </ol>
+    <figure>
+      <img src="imagens/10-paginas.png" alt="Lista de páginas no WordPress">
+      <figcaption>4 — Páginas → Todas as páginas</figcaption>
+    </figure>
 
-    <h3>4.2 Montar ou alterar seções</h3>
+    <h3>5.2 Abrir o editor e clicar em Editar com Elementor</h3>
     <ol class="steps">
-      <li>No painel esquerdo do Elementor, arraste widgets: <strong>Título</strong>, <strong>Texto</strong>, <strong>Imagem</strong>, <strong>Botão</strong>, etc.</li>
+      <li>Clique no título da página (ou em <strong>Editar</strong>).</li>
+      <li>No topo do editor, clique em <strong>Edit with Elementor</strong> / <strong>Editar com Elementor</strong>.</li>
+    </ol>
+    <figure>
+      <img src="imagens/08-edit-page-elementor-button.png" alt="Botão Edit with Elementor na página Contato">
+      <figcaption>5 — Página Contato aberta no WordPress: botão <strong>Edit with Elementor</strong> no topo</figcaption>
+    </figure>
+
+    <h3>5.3 Montar ou alterar seções</h3>
+    <ol class="steps">
+      <li>No painel esquerdo do Elementor, arraste widgets: <strong>Heading</strong>, <strong>Text Editor</strong>, <strong>Image</strong>, <strong>Button</strong>, etc.</li>
       <li>Clique em qualquer texto/imagem já existente para editar.</li>
-      <li>Use seções e colunas para organizar o layout (hero, cards, CTA).</li>
+      <li>Use Container / seções para organizar o layout (hero, cards, CTA).</li>
       <li>Cores da marca: azul <span class="path">#15325f</span> / <span class="path">#004ca0</span> e amarelo <span class="path">#fdb813</span>.</li>
     </ol>
 
-    <h3>4.3 Publicar e conferir</h3>
+    <h3>5.4 Publicar e conferir</h3>
     <ol class="steps">
-      <li>Clique em <strong>Publicar</strong> (ou <strong>Atualizar</strong>).</li>
+      <li>Clique em <strong>Publish</strong> / <strong>Publicar</strong> (ou <strong>Atualizar</strong>).</li>
       <li>Abra a URL pública da página.</li>
       <li>Faça hard refresh: Windows <kbd>Ctrl</kbd>+<kbd>F5</kbd> · Mac <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>.</li>
       <li>Se o cache mostrar versão antiga, acrescente <span class="path">?telefer_nocache=1</span> na URL.</li>
     </ol>
     <div class="warn">
-      <p><strong>Importante:</strong> na primeira vez que você publicar uma página no Elementor, o layout PHP daquela página deixa de aparecer e passa a valer o que estiver no builder. Monte as seções principais antes de publicar, ou use <strong>Visualizar</strong> / rascunho enquanto constrói.</p>
+      <p><strong>Importante:</strong> na primeira vez que você publicar uma página no Elementor, o layout PHP daquela página deixa de aparecer e passa a valer o que estiver no builder. Monte as seções principais antes de publicar, ou use <strong>Preview</strong> enquanto constrói.</p>
     </div>
 
-    <h2 id="template">5. Usar o template Elementor Full Width</h2>
+    <h2 id="interface">6. Interface do editor Elementor</h2>
+    <p>Prints reais do editor na página <strong>Contato</strong> da Telefer:</p>
+    <figure>
+      <img src="imagens/11-elementor-editor-contato.png" alt="Editor Elementor abrindo a página Contato">
+      <figcaption>6 — Editor Elementor aberto na página Contato (canvas + painel)</figcaption>
+    </figure>
+    <figure>
+      <img src="imagens/12-elementor-editor-full.png" alt="Editor Elementor completo da página Contato">
+      <figcaption>7 — Visão completa: barra superior (Contato, Desktop/Tablet/Mobile, Publish) + widgets à esquerda + área “Drag widget here”</figcaption>
+    </figure>
+    <figure>
+      <img src="imagens/10-elementor-widgets-panel.png" alt="Painel de widgets do Elementor">
+      <figcaption>8 — Painel de widgets (Heading, Image, Button, Container…). Arraste para a área central.</figcaption>
+    </figure>
+    <div class="card">
+      <p><strong>Onde fica o quê no editor</strong></p>
+      <ul>
+        <li><strong>Esquerda</strong> — widgets (elementos) para arrastar</li>
+        <li><strong>Centro</strong> — prévia da página (canvas)</li>
+        <li><strong>Topo</strong> — nome da página, modo responsivo, Preview e Publish</li>
+        <li><strong>Structure</strong> — árvore das seções (útil em páginas grandes)</li>
+      </ul>
+    </div>
+    <p class="tip">Se o editor abrir em <strong>Safe Mode</strong>, o Elementor está isolando tema/plugins para carregar. Dá para editar normalmente; depois clique em <em>Disable Safe Mode</em> se tudo estiver estável.</p>
+
+    <h2 id="template">7. Usar o template Elementor Full Width</h2>
     <p>O tema tem um modelo específico para páginas 100% Elementor, mantendo o header/rodapé Telefer:</p>
     <ol class="steps">
       <li>Abra a página no editor do WordPress (não no Elementor ainda).</li>
@@ -168,20 +226,36 @@
     </ol>
     <p>As páginas institucionais atuais (Home, Sobre, Cloud…) já têm lógica híbrida nos templates próprios. O Full Width é útil para páginas novas.</p>
 
-    <h2 id="blog">6. Blog (continua no WordPress)</h2>
+    <h2 id="blog">8. Blog (continua no WordPress)</h2>
     <p>Artigos do Blog <strong>não dependem do Elementor</strong>:</p>
     <ol class="steps">
-      <li><strong>Posts → Adicionar novo</strong>.</li>
+      <li><strong>Posts → Adicionar novo</strong> (ou abra um post existente).</li>
       <li>Preencha título, texto, resumo (Excerpt), categoria e imagem destacada.</li>
       <li>Categorias oficiais: Telefonia, Automação, Marketing Digital, Dicas, Finanças.</li>
       <li><strong>Publicar</strong>.</li>
     </ol>
     <figure>
       <img src="imagens/02-blog-site.png" alt="Página pública do Blog Telefer">
-      <figcaption>Listagem pública: telefer.com.br/blog/</figcaption>
+      <figcaption>9 — Listagem pública: telefer.com.br/blog/</figcaption>
+    </figure>
+    <figure>
+      <img src="imagens/05-lista-posts.png" alt="Lista de posts no WordPress">
+      <figcaption>10 — Posts → Todos os posts (lista no painel)</figcaption>
+    </figure>
+    <figure>
+      <img src="imagens/06-editor-artigo.png" alt="Editor de artigo no WordPress">
+      <figcaption>11 — Editor de artigo (título, bloco de texto, publicar)</figcaption>
+    </figure>
+    <figure>
+      <img src="imagens/08-categorias.png" alt="Categorias do blog no WordPress">
+      <figcaption>12 — Posts → Categorias</figcaption>
+    </figure>
+    <figure>
+      <img src="imagens/09-midia-enviar.png" alt="Biblioteca de mídia no WordPress">
+      <figcaption>13 — Mídia → Enviar (imagem destacada / imagens do artigo)</figcaption>
     </figure>
 
-    <h2 id="header">7. Header, rodapé e menu</h2>
+    <h2 id="header">9. Header, rodapé e menu</h2>
     <p>Hoje o menu (Home, Sobre, Soluções, Blog, Contratar, Contato), o logo e o rodapé vêm do <strong>tema Telefer</strong>, não do Elementor.</p>
     <ul>
       <li>Soluções ativas no menu: <strong>Telefer Cloud</strong> e <strong>Telefer com IA</strong>.</li>
@@ -189,7 +263,7 @@
     </ul>
     <p class="tip">Para editar header/rodapé visualmente no Elementor no futuro, seria necessário Elementor Pro (Theme Builder). Por enquanto, alterações de menu/header passam pelo tema.</p>
 
-    <h2 id="voltar">8. Voltar ao layout antigo de uma página</h2>
+    <h2 id="voltar">10. Voltar ao layout antigo de uma página</h2>
     <p>Se uma página foi publicada no Elementor e você quiser restaurar o visual PHP do tema:</p>
     <ol class="steps">
       <li>Abra a página no WordPress.</li>
@@ -197,9 +271,9 @@
       <li>Forma prática: no editor Elementor, use o histórico / limpe o conteúdo e <strong>não</strong> deixe a página marcada como construída no Elementor; depois atualize.</li>
       <li>Confirme no site com <span class="path">?telefer_nocache=1</span>: se não houver builder ativo, o tema PHP volta a aparecer.</li>
     </ol>
-    <p>Em caso de dúvida, piece rollback do tema (seção abaixo) — o backup pré-Elementor está guardado.</p>
+    <p>Em caso de dúvida, peça rollback do tema (seção abaixo) — o backup pré-Elementor está guardado.</p>
 
-    <h2 id="backup">9. Backup e rollback do tema</h2>
+    <h2 id="backup">11. Backup e rollback do tema</h2>
     <p>Antes da ponte Elementor, foi feito backup completo do tema:</p>
     <ul>
       <li>Servidor: <span class="path">wp-content/themes/telefer-pre-elementor-20261014/</span></li>
@@ -212,7 +286,7 @@
       <li>Atualize o site com <span class="path">?telefer_nocache=1</span></li>
     </ol>
 
-    <h2 id="checklist">10. Checklist rápido</h2>
+    <h2 id="checklist">12. Checklist rápido</h2>
     <div class="card">
       <p><strong>Alterar texto/imagem de página já no Elementor:</strong> Páginas → abrir → Editar com Elementor → alterar → Atualizar → hard refresh.</p>
       <p><strong>Migrar página que ainda está em PHP:</strong> Páginas → Editar com Elementor → montar seções → Visualizar → Publicar.</p>
